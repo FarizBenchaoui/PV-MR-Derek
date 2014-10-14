@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6B19F619ECB40100D989EC /* PVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B19F519ECB40100D989EC /* PVTableViewController.m */; };
 		0B88090F19ECA5DB00AA7CDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */; };
+		0BABFAF319ED240900E2BEE0 /* PVLoadPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABFAF219ED240900E2BEE0 /* PVLoadPicController.m */; };
+		0BABFAFA19ED551600E2BEE0 /* PVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABFAF919ED551600E2BEE0 /* PVAboutViewController.m */; };
 		0BF1E8D719E585AB00622D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8D619E585AB00622D15 /* Foundation.framework */; };
 		0BF1E8D919E585AB00622D15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8D819E585AB00622D15 /* CoreGraphics.framework */; };
 		0BF1E8DB19E585AB00622D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8DA19E585AB00622D15 /* UIKit.framework */; };
@@ -35,8 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B6B19F419ECB40100D989EC /* PVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTableViewController.h; sourceTree = "<group>"; };
+		0B6B19F519ECB40100D989EC /* PVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTableViewController.m; sourceTree = "<group>"; };
 		0B88090D19ECA5DB00AA7CDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0BABFAF119ED240900E2BEE0 /* PVLoadPicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoadPicController.h; sourceTree = "<group>"; };
+		0BABFAF219ED240900E2BEE0 /* PVLoadPicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoadPicController.m; sourceTree = "<group>"; };
+		0BABFAF819ED551600E2BEE0 /* PVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAboutViewController.h; sourceTree = "<group>"; };
+		0BABFAF919ED551600E2BEE0 /* PVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAboutViewController.m; sourceTree = "<group>"; };
 		0BF1E8D319E585AB00622D15 /* PV:MR Derek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PV:MR Derek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF1E8D619E585AB00622D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BF1E8D819E585AB00622D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,13 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B8808C119EC91C100AA7CDE /* SWRevealVieController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SWRevealVieController;
-			sourceTree = "<group>";
-		};
 		0B88090C19ECA5DB00AA7CDE /* SlideOutMenuFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +98,51 @@
 				0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */,
 			);
 			path = SlideOutMenuFiles;
+			sourceTree = "<group>";
+		};
+		0BABFAF419ED544600E2BEE0 /* Load Pic */ = {
+			isa = PBXGroup;
+			children = (
+				0BABFAF119ED240900E2BEE0 /* PVLoadPicController.h */,
+				0BABFAF219ED240900E2BEE0 /* PVLoadPicController.m */,
+			);
+			name = "Load Pic";
+			sourceTree = "<group>";
+		};
+		0BABFAF519ED545300E2BEE0 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				0B6B19F419ECB40100D989EC /* PVTableViewController.h */,
+				0B6B19F519ECB40100D989EC /* PVTableViewController.m */,
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
+		0BABFAF619ED546300E2BEE0 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0BF1E8E519E585AB00622D15 /* PVAppDelegate.h */,
+				0BF1E8E619E585AB00622D15 /* PVAppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		0BABFAF719ED547500E2BEE0 /* First Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0BF1E8EB19E585AB00622D15 /* PVViewController.h */,
+				0BF1E8EC19E585AB00622D15 /* PVViewController.m */,
+			);
+			name = "First Menu";
+			sourceTree = "<group>";
+		};
+		0BABFAFB19ED551B00E2BEE0 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0BABFAF819ED551600E2BEE0 /* PVAboutViewController.h */,
+				0BABFAF919ED551600E2BEE0 /* PVAboutViewController.m */,
+			);
+			name = About;
 			sourceTree = "<group>";
 		};
 		0BF1E8CA19E585AB00622D15 = {
@@ -131,12 +178,12 @@
 		0BF1E8DC19E585AB00622D15 /* PV:MR Derek */ = {
 			isa = PBXGroup;
 			children = (
-				0B8808C119EC91C100AA7CDE /* SWRevealVieController */,
-				0BF1E8E519E585AB00622D15 /* PVAppDelegate.h */,
-				0BF1E8E619E585AB00622D15 /* PVAppDelegate.m */,
+				0BABFAFB19ED551B00E2BEE0 /* About */,
+				0BABFAF419ED544600E2BEE0 /* Load Pic */,
+				0BABFAF519ED545300E2BEE0 /* Table View */,
+				0BABFAF619ED546300E2BEE0 /* Delegate */,
 				0BF1E8E819E585AB00622D15 /* Main.storyboard */,
-				0BF1E8EB19E585AB00622D15 /* PVViewController.h */,
-				0BF1E8EC19E585AB00622D15 /* PVViewController.m */,
+				0BABFAF719ED547500E2BEE0 /* First Menu */,
 				0BF1E8EE19E585AB00622D15 /* Images.xcassets */,
 				0BF1E8DD19E585AB00622D15 /* Supporting Files */,
 			);
@@ -271,6 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BABFAFA19ED551600E2BEE0 /* PVAboutViewController.m in Sources */,
+				0BABFAF319ED240900E2BEE0 /* PVLoadPicController.m in Sources */,
+				0B6B19F619ECB40100D989EC /* PVTableViewController.m in Sources */,
 				0BF1E8ED19E585AB00622D15 /* PVViewController.m in Sources */,
 				0BF1E8E719E585AB00622D15 /* PVAppDelegate.m in Sources */,
 				0BF1E8E319E585AB00622D15 /* main.m in Sources */,
@@ -402,6 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PV:MR Derek/PV:MR Derek-Prefix.pch";
 				INFOPLIST_FILE = "PV:MR Derek/PV:MR Derek-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,6 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PV:MR Derek/PV:MR Derek-Prefix.pch";
 				INFOPLIST_FILE = "PV:MR Derek/PV:MR Derek-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B88090F19ECA5DB00AA7CDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */; };
 		0BF1E8D719E585AB00622D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8D619E585AB00622D15 /* Foundation.framework */; };
 		0BF1E8D919E585AB00622D15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8D819E585AB00622D15 /* CoreGraphics.framework */; };
 		0BF1E8DB19E585AB00622D15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8DA19E585AB00622D15 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B88090D19ECA5DB00AA7CDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		0BF1E8D319E585AB00622D15 /* PV:MR Derek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PV:MR Derek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF1E8D619E585AB00622D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BF1E8D819E585AB00622D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B8808C119EC91C100AA7CDE /* SWRevealVieController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SWRevealVieController;
+			sourceTree = "<group>";
+		};
+		0B88090C19ECA5DB00AA7CDE /* SlideOutMenuFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0B88090D19ECA5DB00AA7CDE /* SWRevealViewController.h */,
+				0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */,
+			);
+			path = SlideOutMenuFiles;
+			sourceTree = "<group>";
+		};
 		0BF1E8CA19E585AB00622D15 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +131,7 @@
 		0BF1E8DC19E585AB00622D15 /* PV:MR Derek */ = {
 			isa = PBXGroup;
 			children = (
+				0B8808C119EC91C100AA7CDE /* SWRevealVieController */,
 				0BF1E8E519E585AB00622D15 /* PVAppDelegate.h */,
 				0BF1E8E619E585AB00622D15 /* PVAppDelegate.m */,
 				0BF1E8E819E585AB00622D15 /* Main.storyboard */,
@@ -126,6 +146,7 @@
 		0BF1E8DD19E585AB00622D15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0B88090C19ECA5DB00AA7CDE /* SlideOutMenuFiles */,
 				0BF1E8DE19E585AB00622D15 /* PV:MR Derek-Info.plist */,
 				0BF1E8DF19E585AB00622D15 /* InfoPlist.strings */,
 				0BF1E8E219E585AB00622D15 /* main.m */,
@@ -253,6 +274,7 @@
 				0BF1E8ED19E585AB00622D15 /* PVViewController.m in Sources */,
 				0BF1E8E719E585AB00622D15 /* PVAppDelegate.m in Sources */,
 				0BF1E8E319E585AB00622D15 /* main.m in Sources */,
+				0B88090F19ECA5DB00AA7CDE /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +479,7 @@
 				0BF1E90719E585AB00622D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BF1E90819E585AB00622D15 /* Build configuration list for PBXNativeTarget "PV:MR DerekTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +488,7 @@
 				0BF1E90A19E585AB00622D15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

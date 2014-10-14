@@ -10,4 +10,5 @@
 
 @interface PVViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
 @end

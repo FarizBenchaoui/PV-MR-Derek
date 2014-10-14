@@ -7,6 +7,7 @@
 //
 
 #import "PVViewController.h"
+#import "SWRevealViewController.h"
 
 @interface PVViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"view did load");
+    [_menuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -28,13 +28,19 @@
 {
     
     [super viewDidLoad];
-    NSLog(@"tableview loaded");
-    _menuArray= [[NSMutableArray alloc]initWithObjects:@"Load Picture",@"Take Picture",@"About", nil];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    _menuArray= [[NSMutableArray alloc]initWithObjects:@"Load Picture",@"Take Picture",@"Stickers",@"Share",@"Buy",@"About", nil];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    NSLog(@"tableview loaded");
+  
+   
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    
+     [self.tableView reloadData];
+  
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,6 +68,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *segue = _menuArray[indexPath.row];
+    _preView =_menuArray[indexPath.row];
     [self performSegueWithIdentifier:segue sender:nil];
 }
 
@@ -74,9 +81,8 @@
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
         NSLog(@"swSegue decription;%@",swSegue.description);
         swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
-            NSLog(@"dvc decription;%@",dvc.description);
+           // [self populateTable];
             UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
-            NSLog(@"navcontroller decription;%@",navController.description);
             [navController setViewControllers: @[dvc] animated: NO ];
             [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
         };
@@ -86,6 +92,16 @@
     
     
 }
+/*-(void)populateTable
+{
+    if ([_preView isEqualToString:@"About"]) {
+    _menuArray= [[NSMutableArray alloc]initWithObjects:@"long balls larry", nil];
+    }else{
+     _menuArray= [[NSMutableArray alloc]initWithObjects:@"I smell bad", nil];
+    }
+   
+    
+}*/
 
 
 @end

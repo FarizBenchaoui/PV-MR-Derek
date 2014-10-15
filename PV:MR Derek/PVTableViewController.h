@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface PVTableViewController : UITableViewController
+
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
 @property NSMutableArray* menuArray;
+@property  NSString* preView;
 @end

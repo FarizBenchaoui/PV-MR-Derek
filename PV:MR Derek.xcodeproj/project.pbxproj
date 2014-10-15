@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B6B19F619ECB40100D989EC /* PVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6B19F519ECB40100D989EC /* PVTableViewController.m */; };
 		0B88090F19ECA5DB00AA7CDE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */; };
+		0BA76DB619EE061B00A465BF /* PVTakePicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA76DB519EE061B00A465BF /* PVTakePicViewController.m */; };
+		0BA76DB919EE062900A465BF /* PVStickersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA76DB819EE062900A465BF /* PVStickersViewController.m */; };
+		0BA76DBC19EE063700A465BF /* PVBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA76DBB19EE063700A465BF /* PVBuyViewController.m */; };
+		0BA76DBF19EE079C00A465BF /* PVShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA76DBE19EE079C00A465BF /* PVShareViewController.m */; };
 		0BABFAF319ED240900E2BEE0 /* PVLoadPicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABFAF219ED240900E2BEE0 /* PVLoadPicController.m */; };
 		0BABFAFA19ED551600E2BEE0 /* PVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BABFAF919ED551600E2BEE0 /* PVAboutViewController.m */; };
 		0BF1E8D719E585AB00622D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF1E8D619E585AB00622D15 /* Foundation.framework */; };
@@ -42,6 +46,14 @@
 		0B6B19F519ECB40100D989EC /* PVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTableViewController.m; sourceTree = "<group>"; };
 		0B88090D19ECA5DB00AA7CDE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0BA76DB419EE061B00A465BF /* PVTakePicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVTakePicViewController.h; sourceTree = "<group>"; };
+		0BA76DB519EE061B00A465BF /* PVTakePicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVTakePicViewController.m; sourceTree = "<group>"; };
+		0BA76DB719EE062900A465BF /* PVStickersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVStickersViewController.h; sourceTree = "<group>"; };
+		0BA76DB819EE062900A465BF /* PVStickersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVStickersViewController.m; sourceTree = "<group>"; };
+		0BA76DBA19EE063700A465BF /* PVBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVBuyViewController.h; sourceTree = "<group>"; };
+		0BA76DBB19EE063700A465BF /* PVBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVBuyViewController.m; sourceTree = "<group>"; };
+		0BA76DBD19EE079C00A465BF /* PVShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVShareViewController.h; sourceTree = "<group>"; };
+		0BA76DBE19EE079C00A465BF /* PVShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVShareViewController.m; sourceTree = "<group>"; };
 		0BABFAF119ED240900E2BEE0 /* PVLoadPicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLoadPicController.h; sourceTree = "<group>"; };
 		0BABFAF219ED240900E2BEE0 /* PVLoadPicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLoadPicController.m; sourceTree = "<group>"; };
 		0BABFAF819ED551600E2BEE0 /* PVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAboutViewController.h; sourceTree = "<group>"; };
@@ -98,6 +110,42 @@
 				0B88090E19ECA5DB00AA7CDE /* SWRevealViewController.m */,
 			);
 			path = SlideOutMenuFiles;
+			sourceTree = "<group>";
+		};
+		0BA76DAB19EE051700A465BF /* Take Pic */ = {
+			isa = PBXGroup;
+			children = (
+				0BA76DB419EE061B00A465BF /* PVTakePicViewController.h */,
+				0BA76DB519EE061B00A465BF /* PVTakePicViewController.m */,
+			);
+			name = "Take Pic";
+			sourceTree = "<group>";
+		};
+		0BA76DAF19EE053B00A465BF /* Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				0BA76DB719EE062900A465BF /* PVStickersViewController.h */,
+				0BA76DB819EE062900A465BF /* PVStickersViewController.m */,
+			);
+			name = Stickers;
+			sourceTree = "<group>";
+		};
+		0BA76DB319EE055900A465BF /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				0BA76DBA19EE063700A465BF /* PVBuyViewController.h */,
+				0BA76DBB19EE063700A465BF /* PVBuyViewController.m */,
+			);
+			name = Buy;
+			sourceTree = "<group>";
+		};
+		0BA76DC019EE07A100A465BF /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				0BA76DBE19EE079C00A465BF /* PVShareViewController.m */,
+				0BA76DBD19EE079C00A465BF /* PVShareViewController.h */,
+			);
+			name = Share;
 			sourceTree = "<group>";
 		};
 		0BABFAF419ED544600E2BEE0 /* Load Pic */ = {
@@ -178,12 +226,16 @@
 		0BF1E8DC19E585AB00622D15 /* PV:MR Derek */ = {
 			isa = PBXGroup;
 			children = (
-				0BABFAFB19ED551B00E2BEE0 /* About */,
+				0BABFAF719ED547500E2BEE0 /* First Menu */,
 				0BABFAF419ED544600E2BEE0 /* Load Pic */,
+				0BA76DAB19EE051700A465BF /* Take Pic */,
+				0BA76DAF19EE053B00A465BF /* Stickers */,
+				0BA76DC019EE07A100A465BF /* Share */,
+				0BA76DB319EE055900A465BF /* Buy */,
+				0BABFAFB19ED551B00E2BEE0 /* About */,
 				0BABFAF519ED545300E2BEE0 /* Table View */,
 				0BABFAF619ED546300E2BEE0 /* Delegate */,
 				0BF1E8E819E585AB00622D15 /* Main.storyboard */,
-				0BABFAF719ED547500E2BEE0 /* First Menu */,
 				0BF1E8EE19E585AB00622D15 /* Images.xcassets */,
 				0BF1E8DD19E585AB00622D15 /* Supporting Files */,
 			);
@@ -319,10 +371,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BABFAFA19ED551600E2BEE0 /* PVAboutViewController.m in Sources */,
+				0BA76DBF19EE079C00A465BF /* PVShareViewController.m in Sources */,
 				0BABFAF319ED240900E2BEE0 /* PVLoadPicController.m in Sources */,
+				0BA76DB619EE061B00A465BF /* PVTakePicViewController.m in Sources */,
+				0BA76DB919EE062900A465BF /* PVStickersViewController.m in Sources */,
 				0B6B19F619ECB40100D989EC /* PVTableViewController.m in Sources */,
 				0BF1E8ED19E585AB00622D15 /* PVViewController.m in Sources */,
 				0BF1E8E719E585AB00622D15 /* PVAppDelegate.m in Sources */,
+				0BA76DBC19EE063700A465BF /* PVBuyViewController.m in Sources */,
 				0BF1E8E319E585AB00622D15 /* main.m in Sources */,
 				0B88090F19ECA5DB00AA7CDE /* SWRevealViewController.m in Sources */,
 			);

@@ -1,19 +1,19 @@
 //
-//  PVAboutViewController.m
+//  PVBuyViewController.m
 //  PV:MR Derek
 //
-//  Created by Fariz Benchaoui on 14/10/2014.
+//  Created by Fariz Benchaoui on 15/10/2014.
 //  Copyright (c) 2014 FarizBenchaoui. All rights reserved.
 //
 
-#import "PVAboutViewController.h"
+#import "PVBuyViewController.h"
 #import "SWRevealViewController.h"
 
-@interface PVAboutViewController ()
+@interface PVBuyViewController ()
 
 @end
 
-@implementation PVAboutViewController
+@implementation PVBuyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /*self.navigationController.navigationBar.topItem.title = @"About";
-    self.navigationItem.leftBarButtonItem = _barButton;
-    self.navigationItem.leftBarButtonItem.title = @"Menu";*/
     _barButton.target = self.revealViewController;
     _barButton.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    // Do any additional setup after loading the view.
     // Do any additional setup after loading the view.
 }
 
@@ -42,5 +40,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

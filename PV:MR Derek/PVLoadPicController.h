@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PVLoadPicController : UIViewController
+@interface PVLoadPicController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *stickerButton;
+
 
 @end

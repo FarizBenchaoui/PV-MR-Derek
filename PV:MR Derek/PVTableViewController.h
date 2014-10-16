@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PVLoadPicController.h"
 
 @interface PVTableViewController : UITableViewController
 

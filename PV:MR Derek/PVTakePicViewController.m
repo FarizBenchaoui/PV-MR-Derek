@@ -27,24 +27,7 @@
 - (void)viewDidLoad
 {
    
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = NO;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                              message:@"Device has no camera"
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"OK"
-                                                    otherButtonTitles: nil];
-        
-        [myAlertView show];
-        
-    }
-    
-    [self presentViewController:picker animated:YES completion:NULL];
+ 
     
     [super viewDidLoad];
     _barButton.target = self.revealViewController;

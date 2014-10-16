@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PVStickersViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
 
 @end

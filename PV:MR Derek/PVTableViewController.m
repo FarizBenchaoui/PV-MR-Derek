@@ -28,11 +28,7 @@
 {
     
     [super viewDidLoad];
-    _menuArray= [[NSMutableArray alloc]initWithObjects:@"Load Picture",@"Take Picture",@"Stickers",@"Share",@"Buy",@"About", nil];
-    
-    NSLog(@"tableview loaded");
-  
-   
+    _menuArray= [[NSMutableArray alloc]initWithObjects:@"Load Picture",@"Take Picture",nil];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -59,49 +55,38 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"  forIndexPath:indexPath];
-    NSString *object = _menuArray[indexPath.row];
-    cell.textLabel.text = object;
+    NSString *cellIdentifier = [_menuArray objectAtIndex:indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
     return cell;
- 
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *segue = _menuArray[indexPath.row];
     _preView =_menuArray[indexPath.row];
     [self performSegueWithIdentifier:segue sender:nil];
-}
+}*/
 
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"segue %@", segue.description);
-    
-    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
-        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
-        NSLog(@"swSegue decription;%@",swSegue.description);
-        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
-           // [self populateTable];
-            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
-            [navController setViewControllers: @[dvc] animated: NO ];
-            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
-        };
+
+    if ([segue.identifier isEqualToString:@"Load Picture"]) {
+
+    PVLoadPicController *loadPicView = segue.destinationViewController;
+
+    loadPicView.loadPic = YES;
         
-    }
-    
-    
-    
-}
-/*-(void)populateTable
-{
-    if ([_preView isEqualToString:@"About"]) {
-    _menuArray= [[NSMutableArray alloc]initWithObjects:@"long balls larry", nil];
-    }else{
-     _menuArray= [[NSMutableArray alloc]initWithObjects:@"I smell bad", nil];
-    }
+    }else if([segue.identifier isEqualToString:@"Take Picture"]){
    
-    
-}*/
+    PVLoadPicController *loadPicView = segue.destinationViewController;
+        
+    loadPicView.loadPic = FALSE;
+        
+        }
+    NSLog(@"set load pic done, exiting prepare for segue");
+
+}
 
 
 @end

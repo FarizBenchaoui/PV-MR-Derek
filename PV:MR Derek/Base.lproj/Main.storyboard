@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XL0-Nf-AWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1634" y="-923"/>
+            <point key="canvasLocation" x="-1925" y="-923"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="4RV-g4-gWy">
@@ -98,27 +98,24 @@
                                 <rect key="frame" x="0.0" y="44" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" id="UQe-3k-2V8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="AqC-Nj-7bK">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="taK-r8-HA5">
-                                            <connections>
-                                                <segue destination="KSS-UW-rA6" kind="modal" id="mY5-Bg-wUd"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TsA-xF-Mlr">
-                                <rect key="frame" x="132" y="525" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n3r-na-fbx">
+                                <rect key="frame" x="0.0" y="0.0" width="81" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stickers">
+                                <state key="normal" title="Menu">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="70I-ib-lth" kind="modal" id="xtW-em-Dqu"/>
+                                    <segue destination="KSS-UW-rA6" kind="modal" id="Pfu-h2-doM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TsA-xF-Mlr">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stickers">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vZq-V8-7tO" kind="modal" id="4NW-gh-52O"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,43 +125,65 @@
                     <navigationItem key="navigationItem" id="1WX-OH-ueJ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="barButton" destination="taK-r8-HA5" id="nCw-BI-qsQ"/>
+                        <outlet property="StickerButton" destination="TsA-xF-Mlr" id="g3z-Qm-Y79"/>
                         <outlet property="imageView" destination="3Ns-IM-N2n" id="itd-f6-lIS"/>
+                        <outlet property="returnButton" destination="n3r-na-fbx" id="Jgc-hP-FM2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXS-Le-bHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="-1666"/>
+            <point key="canvasLocation" x="-364" y="-1689"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="0BH-9H-Bqz">
+        <!--Sticker View Controller-->
+        <scene sceneID="LVH-KS-ERH">
             <objects>
-                <viewController id="70I-ib-lth" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mP6-0h-MNT">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="q6V-a2-FyP" customClass="PVStickerViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="7ZL-oL-lU4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" id="Lcy-ca-w3S">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="Z6D-JV-9GF">
-                                        <barButtonItem key="leftBarButtonItem" title="Done" id="bIw-c1-rbZ">
-                                            <connections>
-                                                <segue destination="VTz-ze-9Mj" kind="modal" id="G4V-fa-tn4"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jaC-D3-puR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yA1-H5-J4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VLS-MC-mZY">
+                            <size key="itemSize" width="94" height="94"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="6Bi-tP-mqc" customClass="PVStickers">
+                                <rect key="frame" x="0.0" y="64" width="94" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Fta-2s-wci">
+                                            <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="cell" destination="Fta-2s-wci" id="xpk-af-cWo"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="q6V-a2-FyP" id="qNd-Up-4Hl"/>
+                            <outlet property="delegate" destination="q6V-a2-FyP" id="MSh-9E-bEf"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="UdJ-j0-XVZ">
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="kRc-Ew-Dh8">
+                            <connections>
+                                <segue destination="VTz-ze-9Mj" kind="modal" id="0An-jH-ocS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGO-68-z3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-959"/>
+            <point key="canvasLocation" x="803" y="-1666"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0wi-U3-Oaj">
@@ -207,7 +226,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i15-0c-j8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-244" y="-212"/>
+            <point key="canvasLocation" x="-252" y="-200"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VWr-If-DwF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vZq-V8-7tO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aRg-kW-yQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q6V-a2-FyP" kind="relationship" relationship="rootViewController" id="HeP-6C-Yfv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lku-pC-Fnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="277" y="-1666"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -216,6 +253,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="G4V-fa-tn4"/>
+        <segue reference="0An-jH-ocS"/>
     </inferredMetricsTieBreakers>
 </document>

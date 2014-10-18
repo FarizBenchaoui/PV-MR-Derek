@@ -8,6 +8,7 @@
 
 #import "PVLoadPicController.h"
 #import "SWRevealViewController.h"
+#import "PVViewController.h"
 
 @interface PVLoadPicController ()
 
@@ -27,17 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [self.returnButton setHidden:YES];
+    [self.StickerButton setHidden:YES];
+   
 }
 -(void)viewDidAppear:(BOOL)animated
 {
    [super viewDidAppear:animated];
-    NSLog(@"at view did appear");
+
     if (self.imageView.image == nil) {
-        NSLog(@"image is null");
-        [self libOrCam];
+        if (!self.cancel) {
+            [self libOrCam];
+
+        }
+      
     }
-       
+        [self.returnButton setHidden:NO];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -52,6 +58,7 @@
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:NULL];
     
+    self.cancel = TRUE;
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
@@ -60,6 +67,7 @@
     self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.imageView setImage:image];
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.StickerButton setHidden:NO];
     
 }
 
@@ -85,6 +93,7 @@
         }
         [self presentViewController:picker animated:YES completion:NULL];
     }
+  
     
 }
 

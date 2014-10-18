@@ -84,7 +84,7 @@
     loadPicView.loadPic = FALSE;
         
         }
-    NSLog(@"set load pic done, exiting prepare for segue");
+    
 
 }
 

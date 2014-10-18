@@ -21,6 +21,7 @@
 {
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    [self.navigationController.navigationBar setHidden:YES];
     _barButton.target = self.revealViewController;
    _barButton.action = @selector(revealToggle:);
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
